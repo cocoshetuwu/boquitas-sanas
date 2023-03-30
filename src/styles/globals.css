@@ -1,0 +1,371 @@
+@font-face{
+    font-family: "Myriad-Pro";  
+    src: url(http://www.anaveer.in/honda/font/MYRIADPRO-BOLD.OTF) format("truetype");
+}
+html *{
+    font-family: "Myriad-Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: large;
+    color: #6D6E71;
+}
+body {
+    margin: 0;
+}
+
+.layout {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    opacity: 1 !important; 
+    /* object-fit: fill; */
+}
+
+.layoutBackground {
+  opacity: .65;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+    overflow: hidden;
+    width: 100%;
+    min-height: 8%;
+    background: linear-gradient(
+      to bottom, 
+    #ffffff 0%, 
+    #ffffff 51%, 
+    #bef0ff 51%, 
+    #bef0ff 100%
+    );
+    /* height: 9.5vh; */
+  }
+
+.children {
+  padding: 0 0 0 0;
+  height: 100%;
+}
+
+.bottom-right {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0rem 2rem 1rem 0;
+}
+
+footer {
+    /* position: fixed; */
+    padding: .2em;
+    /* bottom: 0; */
+    width: 100%;
+    background: #bef0ff;
+    text-align: center;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+	list-style: none;
+  margin-top: .5em;
+  /* height: 50%; */
+  margin-bottom: 0;
+	/* contain the list items */
+	overflow: hidden;
+	
+	/*margin: 0 auto;
+	display: table;*/ /* ul will behave like a table now */
+	
+	text-align: center;
+}
+
+  li {
+    text-align: center;
+    width: 11em
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    margin-top: .2em;
+  }
+
+  .selectedBottom {
+    margin: 0;
+    height: 100%;
+  }
+  
+  .tab {
+    float: left;
+    /* height: 3vh; */
+    margin: 0 8px -1px 0;
+    border: 1px solid #3D9DD4;
+    background: #3D9DD4;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+    height: 40%;
+    /* top | right | bottom | left */
+    /* padding: 30em, 50em, 50em, 40em; */
+  }
+  
+  .tab, .tab a {
+    transition: all .25s;
+  }
+  
+  .tab a {
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .tab a:first-child {
+    white-space: nowrap;
+  }
+  
+  .tab.tabClosed, .tab.tabClosed a:first-child {
+    margin-right: 0;
+    border-width: 0;
+  }
+  
+  .tab.tabClosed {
+    width: 0 !important;/* use important because we need to set the width of tabs in javascript in order to be able to animate them to 0 */
+  }
+  
+  .tab.tabClosed a {
+    opacity: 0;
+  }
+  
+  .tab:hover {
+    background: #bef0ff;
+    border: 1px solid #bef0ff;
+    cursor: pointer; 
+  }
+  
+  li.selected {
+    border: 1px solid #bef0ff;
+    background: #bef0ff;
+    height: 100% !important;
+  }
+
+  a.selected {
+    background: white;
+    width: 90%;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    margin: .5em .5em 0 .5em;
+    border-radius: 8px 8px 8px 8px;
+  }
+
+  .selectedBottom {
+    width: 100%;
+    background-color: rgb(190, 240, 255);
+  }
+
+  .body {
+    width: 100%;
+    height: 100%;
+  }
+
+  .instalaciones {
+    border-radius: 10px;
+  }
+
+  .otrosServicios {
+    border-radius: 10px;
+    position: relative;
+    object-fit: none;
+    object-position: 30% 0;
+    overflow-x: hidden;
+    margin: 0 1rem 0 0;
+    width: 450px;
+    height: 300px;
+  }
+
+  .otrosServiciosBorderLeft {
+    border-radius: 10px;
+    position: relative;
+    object-fit: none;
+    object-position: 30% 0;
+    overflow-x: hidden;
+    margin: 0 1rem 0 1rem;
+    width: 450px;
+    height: 300px;
+  }
+
+  .otrosServiciosBorderRight {
+    border-radius: 10px;
+    position: relative;
+    object-fit: none;
+    object-position: 30% 0;
+    overflow-x: hidden;
+    margin: 0 0 0 0;
+    width: 450px;
+    height: 300px;
+  }
+
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .cvRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 25rem;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .cvContainer {
+    width: 45%;
+    height: 100%;
+    overflow:auto;
+    border-radius: 10px;
+    text-align: justify;
+    background-color: white;
+    border: 10px solid #bef0ff;
+    resize: none;
+  }
+
+  .cvText {
+    padding: 1rem;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+
+  .sectionTitle{
+    text-align: center;
+    color: black;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .serviciosPicContainer1 {
+    width: 626px;
+    height: 400px;
+    position: relative;
+    object-fit: none;
+    object-position: 30% 0;
+    overflow-x: hidden;
+    /* margin: 0 1rem 0 0; */
+    /* margin-right: 1rem; */
+  }
+
+  .serviciosPicContainer2 {
+    width: 548px;
+    height: 400px;
+    position: relative;
+    object-fit: none;
+    object-position: 30% 0;
+    overflow-x: hidden;
+    /* margin: 0 1rem 0 0; */
+    /* margin-right: 1rem; */
+  }
+
+  .serviciosPicContainer3 {
+    width: 595px;
+    height: 400px;
+    position: relative;
+    object-fit: none;
+    object-position: 30% 0;
+    overflow-x: hidden;
+    /* margin: 0 1rem 0 0; */
+    /* margin-right: 1rem; */
+  }
+
+  .slider {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+  }
+
+  .slider > a {
+  transition: all .25s;
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #3D9DD4;
+  text-decoration: none;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 .5rem .5rem .5rem;
+  position: relative;
+}
+
+.slider > a:hover {
+  background: #bef0ff;
+  cursor: pointer; 
+}
+
+.slider > a.selectedSlider {
+  background: #bef0ff;
+}
+
+.slide-1 {
+  opacity: 1;
+  transition: all 1s;
+}
+
+.imageFit {
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;
+  border-radius: 10px;
+}
+
+.inicioTopLeft {
+  margin-bottom: .5rem;
+  width: 33vh;
+  height: 36vh ;
+}
+
+.inicioBottomLeft {
+  width: 33vh;
+  height: 24vh ;
+}
+
+.inicioTopCenter {
+  width: 33vh;
+  height: 22vh ;
+  margin-bottom: .5rem;
+  border-radius: 10px;
+}
+
+.inicioBottomCenter {
+  width: 33vh;
+  height: 38vh ;
+  border-radius: 10px;
+}
+
+.inicioTopRight {
+  width: 33vh;
+  height: 38vh ;
+  margin-bottom: .5rem;
+  border-radius: 10px;
+}
+
+.inicioBottomRight {
+  width: 33vh;
+  height: 22vh ;
+  border-radius: 10px;
+}
+
+.slide {
+  transition: opacity 0.3s ease,
+}
