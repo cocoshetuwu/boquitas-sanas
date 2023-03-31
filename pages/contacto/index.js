@@ -1,5 +1,4 @@
 import Layout from '../../components/layout'
-import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -40,7 +39,7 @@ export default function Home() {
         <div className='column' style={{
             alignItems: 'flex-end'
           }}>
-          <Image
+          <img
               src="/contacto/instalaciones_03.jpeg"
               alt="Instalaciones 03"
               width={300}
@@ -51,7 +50,7 @@ export default function Home() {
           <div className='column' style={{
             alignItems: 'center',
           }}>
-            <Image
+            <img
               src="/contacto/instalaciones_01.jpeg"
               alt="Instalaciones 01"
               width={300}
@@ -62,7 +61,7 @@ export default function Home() {
           <div className='column' style={{
             alignItems: 'flex-start',
           }}>
-          <Image
+          <img
               src="/contacto/instalaciones_02.jpeg"
               alt="Instalaciones 02"
               width={300}

@@ -1,6 +1,5 @@
 import {useState} from 'react';
 import Layout from '../../components/layout';
-import Image from 'next/image';
 
 export default function Home() {
   const [selectedPage, setSelectedPage] = useState('servicios');
@@ -61,24 +60,24 @@ export default function Home() {
           marginRight: '3rem',
       }}>
         <div className='serviciosPicContainer1'>
-        <Image
+        <img
               src="/servicios/servicios_01.png"
               alt="Sevicios 01"
-              fill
+              className='imageFit'
             />
             </div>
             <div className='serviciosPicContainer3'>
-            <Image
+            <img
               src="/servicios/servicios_03.png"
               alt="Servicios 03"
-              fill
+              className='imageFit'
             />
             </div>
             <div className='serviciosPicContainer2'>
-          <Image
+          <img
               src="/servicios/servicios_02.png"
               alt="Servicios 02"
-              fill
+              className='imageFit'
             />
       </div>
       </div>
@@ -112,24 +111,24 @@ export default function Home() {
           marginRight: '3rem',
       }}>
         <div className='otrosServiciosBorderLeft'>
-            <Image
+            <img
               src="/servicios/otros_servicios_03.jpg"
               alt="Otros Servicios 03"
-              fill
+              className='imageFit'
             />
             </div>
         <div className='otrosServicios'>
-        <Image
+        <img
               src="/servicios/otros_servicios_01.jpg"
               alt="Otros Sevicios 01"
-              fill
+              className='imageFit'
             />
             </div>
             <div className='otrosServiciosBorderRight'>
-          <Image
+          <img
               src="/servicios/otros_servicios_02.jpg"
               alt="Otros Servicios 02"
-              fill
+              className='imageFit'
             />
       </div>
       </div>

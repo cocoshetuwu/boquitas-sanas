@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Navbar from './navbar'
 import Footer from './footer'
 import Header from './header'
-import Image from 'next/image'
 
 export default function Layout({
   head_title,
@@ -18,14 +17,15 @@ export default function Layout({
         <link rel="icon" href="/favicon.ico" />
       </Head>
     <div className='layoutBackground'>
-    <Image
+    {/* <img
               src="/fondo.jpg"
               alt="fondo"
-              fill
-            />
+              className='background'
+            /> */}
       </div>
       <div style={{
-      overflow: 'scroll'
+      overflowY: 'scroll',
+      overflowX: 'hidden'
     }}className='layout body'>
       <Navbar selected_tab={selected_tab}/>
       <Header style={{
@@ -37,7 +37,7 @@ export default function Layout({
       </div>
       <div className='bottom-right'>
       <a href='tel:6865549166'>
-      <Image
+      <img
           src="/telefono.png"
           alt="Logo"
           width={70}

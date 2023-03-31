@@ -1,4 +1,3 @@
-import Image from 'next/image'
 
 export default function Footer() {
     return (
@@ -6,7 +5,7 @@ export default function Footer() {
         display: 'flex',
         margin: '.3em 0 0 1em'
     }}>
-        <Image
+        <img
         src="/logo.png"
         alt="Logo"
         width={100}

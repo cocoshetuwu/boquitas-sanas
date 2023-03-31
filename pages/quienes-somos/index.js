@@ -1,6 +1,5 @@
 import {useState} from 'react';
 import Layout from '../../components/layout';
-import Image from 'next/image';
 
 const cursos = [
 'FDI ANNUAL WORLD DENTAL CONGRESS, PARIS FRANCIA NOVIEMBRE-DICIEMBRE, 2000.',
@@ -89,19 +88,80 @@ export default function Home() {
     {selectedPage === 'quienes_somos' && <div id="slide-1" style={{
       opacity: slideOpacity,
     }}className='slide'>
-    <h1 className='sectionTitle'>¿QUIENES SOMOS?</h1>
-      
-        <div>
-          <div>
-          <p>
+      {/* // Top */}
+      <div className='row'>
+          <div style={{
+            width: '60%',
+            marginRight: '3rem',
+            marginLeft: '3rem',
+          }}>
+          <h1 className='sectionTitle' style={{
+    }}>¿QUIENES SOMOS?</h1>
+          <p style={{
+            color: 'black',
+            fontSize: '1.5rem',
+            marginLeft: '1rem',
+          }}>
             Equipo humano especializado en atención bucal para
 bebés, niños y adolescentes con y sin necesidades especiales. Somos el lugar donde tú y tu familia se sentirán bien atendidos. Con nosotros encontrarás las herramientas para brindarles a sus hijos una vida bucal sana. Contamos con más de veinte años de experiencia en el ramo.
           </p>
-          <div className='octagon'>
-
+          </div>
+          <div>
+          <div className='topTopQS'>
+          <img
+            src="/quienes-somos/quienes_somos_02.jpg"
+            alt="Quienes somos 02"
+            className='imageFit'
+            />
+          </div>
+          <div className='topBottomQS'>
+            <img
+            src="/quienes-somos/quienes_somos_01.jpg"
+            alt="Quienes somos 01"
+            className='imageFit'
+            style={{
+              borderRadius: '50%',
+            }}
+            />
+          </div>
+            </div>
+          
+          </div>
+          <div className='row'>
+          <div className= 'column' style={{
+            alignItems: 'flex-end'
+          }}>
+          <div className='bottomLeftQS'>
+          <img
+            src="/quienes-somos/quienes_somos_05.jpg"
+            alt="Quienes somos 05"
+            className='imageFit'
+            />
           </div>
           </div>
-        </div>
+          <div className= 'column' style={{
+            alignItems: 'center'
+          }}>
+          <div className='bottomCenterQS star'>
+          <img
+            src="/quienes-somos/quienes_somos_03.jpg"
+            alt="Quienes somos 03"
+            className='imageFit'
+            />
+          </div>
+          </div>
+          <div className= 'column' style={{
+            alignItems: 'flex-start'
+          }}>
+          <div className='bottomRightQS hexagon'>
+          <img
+            src="/quienes-somos/quienes_somos_04.jpg"
+            alt="Quienes somos 04"
+            className='imageFit'
+            />
+          </div>
+          </div>
+          </div>
     </div>}
     {selectedPage === 'cv' && <div id="slide-2" style={{
       opacity: slideOpacity,
