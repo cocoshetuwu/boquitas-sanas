@@ -13,7 +13,7 @@ export default function Layout({
       <Head>
         <title>Dra. Hebe Ng{head_title ? ` - ${head_title}` : ''}</title>
         <meta name="description" content="boquitas sanas... niños felices®" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="icon" href="/favicon.ico" />
       </Head>
     <div className='layoutBackground'>
@@ -34,15 +34,6 @@ export default function Layout({
         }}/>
       <div className='children'>
         {children}
-      </div>
-      <div className='bottom-right'>
-      <a href='tel:6865549166'>
-      <img
-          src="/telefono.png"
-          alt="Logo"
-          width={70}
-          height={70}/>
-      </a>
       </div>
       <Footer/>
     </div>

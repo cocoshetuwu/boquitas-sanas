@@ -9,6 +9,7 @@ html *{
 }
 body {
     margin: 0;
+    margin-bottom:50px !important;
 }
 
 .layout {
@@ -36,6 +37,7 @@ body {
 .navbar {
     width: 100%;
     min-height: 8%;
+    overflow: auto;
     background: linear-gradient(
       to bottom, 
     #ffffff 0%, 
@@ -52,10 +54,11 @@ body {
 }
 
 .bottom-right {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin: 0rem 2rem 2.5rem 0;
+  /* right: 0 !important; */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 0rem 2vw 1vh 0;
 }
 
 footer {
@@ -168,18 +171,14 @@ ul {
     height: 100%;
   }
 
-  .instalaciones {
-    border-radius: 10px;
-  }
-
   .otrosServicios {
     border-radius: 10px;
     position: relative;
     object-fit: none;
     object-position: 30% 0;
     margin: 0 1rem 0 0;
-    width: 450px;
-    height: 300px;
+    width: 23.44vw;
+    height: 38.9vh;
   }
 
   .otrosServiciosBorderLeft {
@@ -188,18 +187,16 @@ ul {
     /* object-fit: none; */
     /* object-position: 30% 0; */
     margin: 0 1rem 0 1rem;
-    width: 450px;
-    height: 300px;
+    width: 23.44vw;
+    height: 38.9vh;
   }
 
   .otrosServiciosBorderRight {
     border-radius: 10px;
-    position: relative;
-    object-fit: none;
-    object-position: 30% 0;
     margin: 0 0 0 0;
-    width: 450px;
-    height: 300px;
+    width: 23.44vw;
+    height: 38.9vh;
+    object-fit: cover;
   }
 
 
@@ -215,13 +212,13 @@ ul {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    height: 25rem;
+    height: 45.2vh;
     justify-content: center;
     margin-top: 1rem;
   }
 
   .cvContainer {
-    width: 45%;
+    width: 65%;
     height: 100%;
     overflow:auto;
     border-radius: 10px;
@@ -294,8 +291,8 @@ ul {
   .slider > a {
   transition: all .25s;
   display: inline-flex;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2rem;
+  height: 2rem;
   background: #3D9DD4;
   text-decoration: none;
   align-items: center;
@@ -304,15 +301,16 @@ ul {
   border-radius: 50%;
   margin: 0 .5rem .5rem .5rem;
   position: relative;
+  font-size: 1.5rem;
 }
 
 .slider > a:hover {
-  background: #bef0ff;
+  background: white;
   cursor: pointer; 
 }
 
 .slider > a.selectedSlider {
-  background: #bef0ff;
+  background: white;
 }
 
 .slide-1 {
@@ -323,7 +321,14 @@ ul {
 .imageFit {
   width: 100%;
   height: 100%;
-  object-fit: cover !important;
+  object-fit: contain;
+  border-radius: 15%;
+}
+
+.imageCover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 10px;
 }
 
@@ -333,38 +338,38 @@ ul {
 
 .inicioTopLeft {
   margin-bottom: .5rem;
-  width: 33vh;
-  height: 36vh ;
+  width: 18vw;
+  height: 40vh ;
 }
 
 .inicioBottomLeft {
-  width: 33vh;
-  height: 24vh ;
+  width: 18vw;
+  height: 30vh ;
 }
 
 .inicioTopCenter {
-  width: 33vh;
-  height: 22vh ;
+  width: 23vw;
+  height: 30vh ;
   margin-bottom: .5rem;
   border-radius: 10px;
 }
 
 .inicioBottomCenter {
-  width: 33vh;
-  height: 38vh ;
+  width: 23vw;
+  height: 40vh ;
   border-radius: 10px;
 }
 
 .inicioTopRight {
-  width: 33vh;
-  height: 38vh ;
+  width: 23vw;
+  height: 40vh ;
   margin-bottom: .5rem;
   border-radius: 10px;
 }
 
 .inicioBottomRight {
-  width: 33vh;
-  height: 22vh ;
+  width: 23vw;
+  height: 30vh ;
   border-radius: 10px;
 }
 
@@ -377,34 +382,34 @@ ul {
 }
 
 .topTopQS {
-  width: 18rem;
-  height: 14rem;
+  width: 15vw;
+  height: 25.32vh;
   transform: rotate(10deg);
 }
 
 .topBottomQS {
-  width: 20rem;
-  height: 13rem;
+  width: 16.67vw;
+  height: 23.51vh;
   margin: 2rem 0 0 5rem;
   transform: rotate(360deg);
 }
 
 .bottomLeftQS {
-  width: 20rem;
-  height: 13rem;
+  width: 16.67vw;
+  height: 23.51vh;
   margin: 0 0 0 1rem;
   transform: rotate(340deg);
 }
 
 .bottomCenterQS {
-  width: 30rem;
-  height: 20rem;
+  width: 25vw;
+  height: 36.16vh;
   margin: 0 0 0 0rem;
 }
 
 .bottomRightQS {
-  width: 20rem;
-  height: 15rem;
+  width: 16.67vw;
+  height: 27.12vh;
   margin: 1rem 1rem 0 0rem;
   transform: rotate(340deg);
 }
@@ -458,6 +463,15 @@ ul {
 }
 
 .footer {
-  position: absolute;
+  /* position: fixed; */
   bottom: 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.contacto {
+  height: 22.6vh;
+  width: 15.63vw;
+  border-radius: 10px;
 }

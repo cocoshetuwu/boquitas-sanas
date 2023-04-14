@@ -44,8 +44,8 @@ export default function Home() {
             color: 'black',
             fontSize: '1.5rem',
             alignItems: 'center',
-            marginLeft: '20rem',
-            marginRight: '15rem',
+            marginLeft: '16.67vw',
+            marginRight: '12.5vw',
           }}>
             Nosotros le brindaremos la atención necesaria a sus pequeños de modo de hacer de la salud bucal un proyecto de vida; Al Proveerle a sus hijos las herramientas necesarias para que aprendan a cuidar de su boca.
           </p>
@@ -71,6 +71,9 @@ export default function Home() {
               src="/servicios/servicios_03.png"
               alt="Servicios 03"
               className='imageFit'
+              style={{
+                objectFit: 'contain',
+              }}
             />
             </div>
             <div className='serviciosPicContainer2'>
@@ -95,8 +98,8 @@ export default function Home() {
             color: 'black',
             fontSize: '1.5rem',
             alignItems: 'center',
-            marginLeft: '20rem',
-            marginRight: '15rem',
+            marginLeft: '16.67vw',
+            marginRight: '12.5vw',
           }}>
             Contamos también con servicio de odontología general y especializada para adulto y adulto mayor y/o adultos con necesidades especiales. Los mejores especialistas de cada área de la salud bucal para brindarle apoyo a todas sus necesidades.
           </p>

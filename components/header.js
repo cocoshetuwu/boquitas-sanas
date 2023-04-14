@@ -5,6 +5,7 @@ export default function Footer() {
         display: 'flex',
         margin: '.3em 0 0 1em'
     }}>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <img
         src="/logo.png"
         alt="Logo"

@@ -35,7 +35,7 @@ export default function Home() {
           <img
               src="/inicio/inicio_03.jpg"
               alt="Inicio 03"
-              className='imageFit imageAppear'
+              className='imageCover imageAppear'
               style={{
                 opacity: imagesOpacities[1],
               }}
@@ -45,7 +45,7 @@ export default function Home() {
             <img
               src="/inicio/inicio_04.jpg"
               alt="Inicio 04"
-              className='imageFit imageAppear'
+              className='imageCover imageAppear'
               style={{
                 opacity: imagesOpacities[2],
               }}
@@ -59,7 +59,7 @@ export default function Home() {
             <img
               src="/inicio/inicio_05.jpg"
               alt="Inicio 05"
-              className='imageFit imageAppear'
+              className='imageCover imageAppear'
               style={{
                 opacity: imagesOpacities[3],
               }}
@@ -69,7 +69,7 @@ export default function Home() {
             <img
               src="/inicio/inicio_02.jpg"
               alt="Inicio 02"
-              className='imageFit imageAppear'
+              className='imageCover imageAppear'
               style={{
                 opacity: imagesOpacities[4],
               }}
@@ -83,7 +83,7 @@ export default function Home() {
           <img
               src="/inicio/inicio_01.jpg"
               alt="Inicio 01"
-              className='imageFit imageAppear'
+              className='imageCover imageAppear'
               style={{
                 opacity: imagesOpacities[5],
               }}
@@ -93,7 +93,7 @@ export default function Home() {
             <img
               src="/inicio/inicio_06.jpg"
               alt="Inicio 06"
-              className='imageFit imageAppear'
+              className='imageCover imageAppear'
               style={{
                 opacity: imagesOpacities[6],
               }}

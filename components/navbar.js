@@ -20,6 +20,7 @@ export default function Navbar({
 
   return (
     <div className='navbar'>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <ul style={{
         // display: 'inline-block',
       }}> 

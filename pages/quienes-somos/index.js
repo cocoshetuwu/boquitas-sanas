@@ -92,22 +92,22 @@ export default function Home() {
       <div className='row'>
           <div style={{
             width: '65%',
-            marginRight: '3rem',
-            marginLeft: '3rem',
+            marginRight: '2.5vw',
+            marginLeft: '2.5vw',
           }}>
           <h1 className='sectionTitle' style={{
     }}>¿QUIENES SOMOS?</h1>
           <p style={{
             color: 'black',
             fontSize: '1.5rem',
-            marginLeft: '1rem',
+            marginLeft: '.79vw',
           }}>
             Equipo humano especializado en atención bucal para
 bebés, niños y adolescentes con y sin necesidades especiales. Somos el lugar donde tú y tu familia se sentirán bien atendidos. Con nosotros encontrarás las herramientas para brindarles a sus hijos una vida bucal sana. Contamos con más de veinte años de experiencia en el ramo.
           </p>
 
           <div className='row' style={{
-            marginTop: '5rem',
+            marginTop: '9.04vh',
           }}>
           <div className= 'column' style={{
             alignItems: 'flex-end'
@@ -214,7 +214,7 @@ DIPLOMADO EN ORTOPEDIA MAXILOFACIAL por la Asociación Mexicana para la enseñan
 
 <p> DIPLOMADO ADE ADMINISTRACION DE CLÍNICAS Y HOSPITALES OCTUBRE 2022. 76 HORAS . CENTRO DE ENSEÑANZA TECNICA Y SUPERIOR.</p>
 
-<p>XXI CONGRESO LATINOAMERICANO DE ODONTOPEDIATRIA CON PONENCIA ATENCIONESPECIAL A NIÑOS ESPECIALES, MONTERREY, N.L., NOVIEMBRE 2022</p>
+<p>XXI CONGRESO LATINOAMERICANO DE ODONTOPEDIATRIA CON PONENCIA ATENCION ESPECIAL A NIÑOS ESPECIALES, MONTERREY, N.L., NOVIEMBRE 2022</p>
 
 <p></p>
 
