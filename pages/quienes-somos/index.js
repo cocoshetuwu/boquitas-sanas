@@ -91,7 +91,7 @@ export default function Home() {
       {/* // Top */}
       <div className='row'>
           <div style={{
-            width: '60%',
+            width: '65%',
             marginRight: '3rem',
             marginLeft: '3rem',
           }}>
@@ -105,6 +105,44 @@ export default function Home() {
             Equipo humano especializado en atención bucal para
 bebés, niños y adolescentes con y sin necesidades especiales. Somos el lugar donde tú y tu familia se sentirán bien atendidos. Con nosotros encontrarás las herramientas para brindarles a sus hijos una vida bucal sana. Contamos con más de veinte años de experiencia en el ramo.
           </p>
+
+          <div className='row' style={{
+            marginTop: '5rem',
+          }}>
+          <div className= 'column' style={{
+            alignItems: 'flex-end'
+          }}>
+          <div className='bottomLeftQS'>
+          <img
+            src="/quienes-somos/quienes_somos_05.jpg"
+            alt="Quienes somos 05"
+            className='imageFit'
+            />
+          </div>
+          </div>
+          <div className= 'column' style={{
+            alignItems: 'flex-end'
+          }}>
+          <div className='bottomCenterQS star'>
+          <img
+            src="/quienes-somos/quienes_somos_03.jpg"
+            alt="Quienes somos 03"
+            className='imageFit'
+            />
+          </div>
+          </div>
+          <div className= 'column' style={{
+            alignItems: 'center'
+          }}>
+          <div className='bottomRightQS hexagon'>
+          <img
+            src="/quienes-somos/quienes_somos_04.jpg"
+            alt="Quienes somos 04"
+            className='imageFit'
+            />
+          </div>
+          </div>
+          </div>
           </div>
           <div>
           <div className='topTopQS'>
@@ -126,41 +164,6 @@ bebés, niños y adolescentes con y sin necesidades especiales. Somos el lugar d
           </div>
             </div>
           
-          </div>
-          <div className='row'>
-          <div className= 'column' style={{
-            alignItems: 'flex-end'
-          }}>
-          <div className='bottomLeftQS'>
-          <img
-            src="/quienes-somos/quienes_somos_05.jpg"
-            alt="Quienes somos 05"
-            className='imageFit'
-            />
-          </div>
-          </div>
-          <div className= 'column' style={{
-            alignItems: 'center'
-          }}>
-          <div className='bottomCenterQS star'>
-          <img
-            src="/quienes-somos/quienes_somos_03.jpg"
-            alt="Quienes somos 03"
-            className='imageFit'
-            />
-          </div>
-          </div>
-          <div className= 'column' style={{
-            alignItems: 'flex-start'
-          }}>
-          <div className='bottomRightQS hexagon'>
-          <img
-            src="/quienes-somos/quienes_somos_04.jpg"
-            alt="Quienes somos 04"
-            className='imageFit'
-            />
-          </div>
-          </div>
           </div>
     </div>}
     {selectedPage === 'cv' && <div id="slide-2" style={{
