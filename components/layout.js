@@ -25,7 +25,7 @@ export default function Layout({
       </div>
       <div style={{
       overflowY: 'scroll',
-      overflowX: 'hidden'
+      overflowX: 'scroll'
     }}className='layout body'>
       <Navbar selected_tab={selected_tab}/>
       <Header style={{

@@ -291,9 +291,10 @@ ul {
   .slider > a {
   transition: all .25s;
   display: inline-flex;
-  width: 2rem;
-  height: 2rem;
+  width: 2.09vw;
+  height: 4.51vh;
   background: #3D9DD4;
+  border: 3px solid #6D6E71;
   text-decoration: none;
   align-items: center;
   align-content: center;
@@ -301,7 +302,7 @@ ul {
   border-radius: 50%;
   margin: 0 .5rem .5rem .5rem;
   position: relative;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .slider > a:hover {
@@ -471,7 +472,7 @@ ul {
 }
 
 .contacto {
-  height: 22.6vh;
-  width: 15.63vw;
+  width: 23.44vw;
+  height: 38.9vh;
   border-radius: 10px;
 }

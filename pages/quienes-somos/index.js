@@ -55,7 +55,7 @@ const cursos = [
 'XXI CONGRESO LATINOAMERICANO DE ODONTOPEDIATRIA CON PONENCIA ATENCIONESPECIAL A NIÑOS ESPECIALES, MONTERREY, N.L.,  NOVIEMBRE 2022.',
 ]
 
-export default function Home() {
+export default function QuienesSomos() {
   const [selectedPage, setSelectedPage] = useState('quienes_somos');
   const [slideOpacity, setSlideOpacity] = useState(1);
 
@@ -103,7 +103,7 @@ export default function Home() {
             marginLeft: '.79vw',
           }}>
             Equipo humano especializado en atención bucal para
-bebés, niños y adolescentes con y sin necesidades especiales. Somos el lugar donde tú y tu familia se sentirán bien atendidos. Con nosotros encontrarás las herramientas para brindarles a sus hijos una vida bucal sana. Contamos con más de veinte años de experiencia en el ramo.
+bebés, niños y adolescentes con cualquier necesidad. Somos el lugar donde tú y tu familia se sentirán bien atendidos. Con nosotros encontrarás las herramientas para brindarles a sus hijos una vida bucal sana. Contamos con más de veinte años de experiencia en el ramo.
           </p>
 
           <div className='row' style={{
@@ -116,7 +116,7 @@ bebés, niños y adolescentes con y sin necesidades especiales. Somos el lugar d
           <img
             src="/quienes-somos/quienes_somos_05.jpg"
             alt="Quienes somos 05"
-            className='imageFit'
+            className='imageCover'
             />
           </div>
           </div>
@@ -127,7 +127,7 @@ bebés, niños y adolescentes con y sin necesidades especiales. Somos el lugar d
           <img
             src="/quienes-somos/quienes_somos_03.jpg"
             alt="Quienes somos 03"
-            className='imageFit'
+            className='imageCover'
             />
           </div>
           </div>
@@ -138,7 +138,7 @@ bebés, niños y adolescentes con y sin necesidades especiales. Somos el lugar d
           <img
             src="/quienes-somos/quienes_somos_04.jpg"
             alt="Quienes somos 04"
-            className='imageFit'
+            className='imageCover'
             />
           </div>
           </div>
@@ -149,14 +149,14 @@ bebés, niños y adolescentes con y sin necesidades especiales. Somos el lugar d
           <img
             src="/quienes-somos/quienes_somos_02.jpg"
             alt="Quienes somos 02"
-            className='imageFit'
+            className='imageCover'
             />
           </div>
           <div className='topBottomQS'>
             <img
             src="/quienes-somos/quienes_somos_01.jpg"
             alt="Quienes somos 01"
-            className='imageFit'
+            className='imageCover'
             style={{
               borderRadius: '50%',
             }}

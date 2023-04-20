@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import Layout from '../../components/layout';
 
-export default function Home() {
+export default function Servicios() {
   const [selectedPage, setSelectedPage] = useState('servicios');
   const [slideOpacity, setSlideOpacity] = useState(1);
 
@@ -47,7 +47,7 @@ export default function Home() {
             marginLeft: '16.67vw',
             marginRight: '12.5vw',
           }}>
-            Nosotros le brindaremos la atención necesaria a sus pequeños de modo de hacer de la salud bucal un proyecto de vida; Al Proveerle a sus hijos las herramientas necesarias para que aprendan a cuidar de su boca.
+            Nosotros le brindaremos la atención necesaria a sus pequeños de modo de hacer de la salud bucal un proyecto de vida; Al proveerle a sus hijos las herramientas necesarias para que aprendan a cuidar de su boca de acuerdo a su edad.
           </p>
           </div>
         </div>
@@ -63,14 +63,14 @@ export default function Home() {
         <img
               src="/servicios/servicios_01.png"
               alt="Sevicios 01"
-              className='imageFit'
+              className='imageCover'
             />
             </div>
             <div className='serviciosPicContainer3'>
             <img
               src="/servicios/servicios_03.png"
               alt="Servicios 03"
-              className='imageFit'
+              className='imageCover'
               style={{
                 objectFit: 'contain',
               }}
@@ -80,7 +80,7 @@ export default function Home() {
           <img
               src="/servicios/servicios_02.png"
               alt="Servicios 02"
-              className='imageFit'
+              className='imageCover'
             />
       </div>
       </div>
@@ -117,21 +117,21 @@ export default function Home() {
             <img
               src="/servicios/otros_servicios_03.jpg"
               alt="Otros Servicios 03"
-              className='imageFit'
+              className='imageCover'
             />
             </div>
         <div className='otrosServicios'>
         <img
               src="/servicios/otros_servicios_01.jpg"
               alt="Otros Sevicios 01"
-              className='imageFit'
+              className='imageCover'
             />
             </div>
             <div className='otrosServiciosBorderRight'>
           <img
               src="/servicios/otros_servicios_02.jpg"
               alt="Otros Servicios 02"
-              className='imageFit'
+              className='imageCover'
             />
       </div>
       </div>
