@@ -291,8 +291,8 @@ ul {
   .slider > a {
   transition: all .25s;
   display: inline-flex;
-  width: 2.09vw;
-  height: 4.51vh;
+  width: 2.5rem;
+  height: 2.5rem;
   background: #3D9DD4;
   border: 3px solid #6D6E71;
   text-decoration: none;
