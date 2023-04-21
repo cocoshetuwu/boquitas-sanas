@@ -173,12 +173,8 @@ ul {
 
   .otrosServicios {
     border-radius: 10px;
-    position: relative;
-    object-fit: none;
-    object-position: 30% 0;
-    margin: 0 1rem 0 0;
-    width: 40vw;
-    height: 45vh;
+    width: 650px;
+    height: auto;
   }
 /*
   .otrosServiciosBorderLeft {
@@ -244,8 +240,8 @@ ul {
   }
 
   .serviciosPicContainer1 {
-    width: 626px;
-    height: 440px;
+    width: 650px;
+    height: 500px;
     /* position: relative;
     object-fit: none;
     object-position: 30% 0; */
@@ -469,7 +465,11 @@ ul {
 }
 
 .contacto {
-  width: 50vw;
-  height: 60vh;
+  max-width: 95%;
+  height: auto;
   border-radius: 10px;
+}
+
+.oval {
+  border-radius: 50%;
 }

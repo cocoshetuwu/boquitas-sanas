@@ -17,9 +17,11 @@ export default function Contacto() {
           }
           return prev + 1;
         })
+      }, 500);
+      setTimeout(() => {
         setImageOpacity(1);
       }, 700);
-    }, 5000);
+    }, 4000);
     return () => clearInterval(interval);
   }, [imageIndex]);
 

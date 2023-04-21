@@ -17,11 +17,11 @@ export default function Servicios() {
           }
           return prev + 1;
         })
-      }, 600);
+      }, 500);
       setTimeout(() => {
         setImageOpacity(1);
       }, 700);
-    }, 5000);
+    }, 4000);
     return () => clearInterval(interval);
   }, [imageIndex]);
 
@@ -80,13 +80,12 @@ export default function Servicios() {
           justifyContent: 'center',
           marginTop: '0',
           // marginLeft: '10rem',
-          marginRight: '3rem',
       }}>
         <div className='serviciosPicContainer1'>
         <img
               src={`/servicios/servicios_0${imageIndex}.png`}
               alt={`Sevicios 0${imageIndex}`}
-              className='imageCover imageAppear'
+              className='imageFit imageAppear'
               style={{
                 opacity: imageOpacity,
               }}
@@ -120,13 +119,12 @@ export default function Servicios() {
           justifyContent: 'center',
           marginTop: '0',
           // marginLeft: '10rem',
-          marginRight: '3rem',
       }}>
         <div className='otrosServicios'>
         <img
               src={`/servicios/otros_servicios_0${imageIndex}.jpg`}
               alt={`Otros Sevicios 0${imageIndex}`}
-              className='imageCover imageAppear'
+              className='imageFit imageAppear'
               style={{
                 opacity: imageOpacity,
               }}

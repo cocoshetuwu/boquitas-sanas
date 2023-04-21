@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import Layout from '../../components/layout';
 
 const cursos = [
@@ -55,9 +55,39 @@ const cursos = [
 'XXI CONGRESO LATINOAMERICANO DE ODONTOPEDIATRIA CON PONENCIA ATENCIONESPECIAL A NIÑOS ESPECIALES, MONTERREY, N.L.,  NOVIEMBRE 2022.',
 ]
 
+const imageClases = {
+  1: 'oval',
+  2: '',
+  3: 'star',
+  4: 'hexagon',
+  5: '',
+};
+
 export default function QuienesSomos() {
   const [selectedPage, setSelectedPage] = useState('quienes_somos');
   const [slideOpacity, setSlideOpacity] = useState(1);
+  const [imageIndex, setImageIndex] = useState(1);
+  const [imageOpacity, setImageOpacity] = useState(1);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setImageOpacity(0);
+      setTimeout(() => {
+        setImageIndex((prev) => {
+          if (prev === 5) {
+            return 1;
+          }
+          return prev + 1;
+        })
+      }, 500);
+      setTimeout(() => {
+        setImageOpacity(1);
+      }, 700);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [imageIndex]);
+
+
 
   return (
     <Layout head_title='¿Quienes Somos?' selected_tab='¿Quienes Somos?'>
@@ -66,6 +96,7 @@ export default function QuienesSomos() {
           if (selectedPage !== 'quienes_somos') {
             setSlideOpacity(0);
           setTimeout(() => {
+            setImageIndex(1);
             setSelectedPage('quienes_somos')
           }, 300);
           setTimeout(() => {
@@ -89,82 +120,42 @@ export default function QuienesSomos() {
       opacity: slideOpacity,
     }}className='slide'>
       {/* // Top */}
-      <div className='row'>
-          <div style={{
-            width: '65%',
-            marginRight: '2.5vw',
-            marginLeft: '2.5vw',
-          }}>
-          <h1 className='sectionTitle' style={{
-    }}>¿QUIENES SOMOS?</h1>
+      <h1 className='sectionTitle' style={{
+          marginTop: '0',
+        }}>¿QUIENES SOMOS?</h1>
+      
+        <div className='row'>
+          <div className='column'>
           <p style={{
             color: 'black',
             fontSize: '1.5rem',
-            marginLeft: '.79vw',
+            alignItems: 'center',
+            marginLeft: '16.67vw',
+            marginRight: '12.5vw',
           }}>
             Equipo humano especializado en atención bucal para
 bebés, niños y adolescentes con cualquier necesidad. Somos el lugar donde tú y tu familia se sentirán bien atendidos. Con nosotros encontrarás las herramientas para brindarles a sus hijos una vida bucal sana. Contamos con más de veinte años de experiencia en el ramo.
           </p>
-
-          <div className='row' style={{
-            marginTop: '9.04vh',
-          }}>
-          <div className= 'column' style={{
-            alignItems: 'flex-end'
-          }}>
-          <div className='bottomLeftQS'>
-          <img
-            src="/quienes-somos/quienes_somos_05.jpg"
-            alt="Quienes somos 05"
-            className='imageCover'
+          </div>
+        </div>
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          marginTop: '0',
+          // marginLeft: '10rem',
+      }}>
+        <div className='otrosServicios'>
+        <img
+              src={`/quienes-somos/quienes_somos_0${imageIndex}.jpg`}
+              alt={`Quienes Somos 0${imageIndex}`}
+              className={`imageFit imageAppear ${imageClases[imageIndex]}`}
+              style={{
+                opacity: imageOpacity,
+              }}
             />
-          </div>
-          </div>
-          <div className= 'column' style={{
-            alignItems: 'flex-end'
-          }}>
-          <div className='bottomCenterQS star'>
-          <img
-            src="/quienes-somos/quienes_somos_03.jpg"
-            alt="Quienes somos 03"
-            className='imageCover'
-            />
-          </div>
-          </div>
-          <div className= 'column' style={{
-            alignItems: 'center'
-          }}>
-          <div className='bottomRightQS hexagon'>
-          <img
-            src="/quienes-somos/quienes_somos_04.jpg"
-            alt="Quienes somos 04"
-            className='imageCover'
-            />
-          </div>
-          </div>
-          </div>
-          </div>
-          <div>
-          <div className='topTopQS'>
-          <img
-            src="/quienes-somos/quienes_somos_02.jpg"
-            alt="Quienes somos 02"
-            className='imageCover'
-            />
-          </div>
-          <div className='topBottomQS'>
-            <img
-            src="/quienes-somos/quienes_somos_01.jpg"
-            alt="Quienes somos 01"
-            className='imageCover'
-            style={{
-              borderRadius: '50%',
-            }}
-            />
-          </div>
             </div>
-          
-          </div>
+      </div>
     </div>}
     {selectedPage === 'cv' && <div id="slide-2" style={{
       opacity: slideOpacity,
