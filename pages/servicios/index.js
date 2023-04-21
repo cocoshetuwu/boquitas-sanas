@@ -1,9 +1,30 @@
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import Layout from '../../components/layout';
 
 export default function Servicios() {
   const [selectedPage, setSelectedPage] = useState('servicios');
   const [slideOpacity, setSlideOpacity] = useState(1);
+  const [imageIndex, setImageIndex] = useState(1);
+  const [imageOpacity, setImageOpacity] = useState(1);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setImageOpacity(0);
+      setTimeout(() => {
+        setImageIndex((prev) => {
+          if (prev === 3) {
+            return 1;
+          }
+          return prev + 1;
+        })
+      }, 600);
+      setTimeout(() => {
+        setImageOpacity(1);
+      }, 700);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [imageIndex]);
+
 
   return (
     <Layout head_title='Servicios' selected_tab='Servicios'>
@@ -13,6 +34,7 @@ export default function Servicios() {
             setSlideOpacity(0);
           setTimeout(() => {
             setSelectedPage('servicios')
+            setImageIndex(1);
           }, 300);
           setTimeout(() => {
             setSlideOpacity(1);
@@ -24,6 +46,7 @@ export default function Servicios() {
           setSlideOpacity(0);
         setTimeout(() => {
           setSelectedPage('otros_servicios')
+          setImageIndex(1);
         }, 300);
         setTimeout(() => {
           setSlideOpacity(1);
@@ -61,28 +84,14 @@ export default function Servicios() {
       }}>
         <div className='serviciosPicContainer1'>
         <img
-              src="/servicios/servicios_01.png"
-              alt="Sevicios 01"
-              className='imageCover'
-            />
-            </div>
-            <div className='serviciosPicContainer3'>
-            <img
-              src="/servicios/servicios_03.png"
-              alt="Servicios 03"
-              className='imageCover'
+              src={`/servicios/servicios_0${imageIndex}.png`}
+              alt={`Sevicios 0${imageIndex}`}
+              className='imageCover imageAppear'
               style={{
-                objectFit: 'contain',
+                opacity: imageOpacity,
               }}
             />
             </div>
-            <div className='serviciosPicContainer2'>
-          <img
-              src="/servicios/servicios_02.png"
-              alt="Servicios 02"
-              className='imageCover'
-            />
-      </div>
       </div>
     </div>}
     {selectedPage === 'otros_servicios' && <div id="slide-2" style ={{
@@ -113,27 +122,16 @@ export default function Servicios() {
           // marginLeft: '10rem',
           marginRight: '3rem',
       }}>
-        <div className='otrosServiciosBorderLeft'>
-            <img
-              src="/servicios/otros_servicios_03.jpg"
-              alt="Otros Servicios 03"
-              className='imageCover'
-            />
-            </div>
         <div className='otrosServicios'>
         <img
-              src="/servicios/otros_servicios_01.jpg"
-              alt="Otros Sevicios 01"
-              className='imageCover'
+              src={`/servicios/otros_servicios_0${imageIndex}.jpg`}
+              alt={`Otros Sevicios 0${imageIndex}`}
+              className='imageCover imageAppear'
+              style={{
+                opacity: imageOpacity,
+              }}
             />
             </div>
-            <div className='otrosServiciosBorderRight'>
-          <img
-              src="/servicios/otros_servicios_02.jpg"
-              alt="Otros Servicios 02"
-              className='imageCover'
-            />
-      </div>
       </div>
     </div>}
             

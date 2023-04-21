@@ -177,15 +177,12 @@ ul {
     object-fit: none;
     object-position: 30% 0;
     margin: 0 1rem 0 0;
-    width: 23.44vw;
-    height: 38.9vh;
+    width: 40vw;
+    height: 45vh;
   }
-
+/*
   .otrosServiciosBorderLeft {
     border-radius: 10px;
-    /* position: relative; */
-    /* object-fit: none; */
-    /* object-position: 30% 0; */
     margin: 0 1rem 0 1rem;
     width: 23.44vw;
     height: 38.9vh;
@@ -197,7 +194,7 @@ ul {
     width: 23.44vw;
     height: 38.9vh;
     object-fit: cover;
-  }
+  } */
 
 
   .row {
@@ -248,10 +245,10 @@ ul {
 
   .serviciosPicContainer1 {
     width: 626px;
-    height: 400px;
-    position: relative;
+    height: 440px;
+    /* position: relative;
     object-fit: none;
-    object-position: 30% 0;
+    object-position: 30% 0; */
     /* margin: 0 1rem 0 0; */
     /* margin-right: 1rem; */
   }
@@ -442,7 +439,7 @@ ul {
 
 .hexagon {
   -webkit-mask-image: url('/hexagon.png');
-  -webkit-mask-size: contain;
+  -webkit-ask-size: contain;
   -webkit-mask-repeat: no-repeat;
   mask-image: url('/hexagon.png');
   mask-size: contain;
@@ -472,7 +469,7 @@ ul {
 }
 
 .contacto {
-  width: 23.44vw;
-  height: 38.9vh;
+  width: 50vw;
+  height: 60vh;
   border-radius: 10px;
 }

@@ -1,9 +1,27 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Layout from '../../components/layout'
 
 export default function Contacto() {
   const [selectedPage, setSelectedPage] = useState('contacto');
   const [slideOpacity, setSlideOpacity] = useState(1);
+  const [imageIndex, setImageIndex] = useState(1);
+  const [imageOpacity, setImageOpacity] = useState(1);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setImageOpacity(0);
+      setTimeout(() => {
+        setImageIndex((prev) => {
+          if (prev === 3) {
+            return 1;
+          }
+          return prev + 1;
+        })
+        setImageOpacity(1);
+      }, 700);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [imageIndex]);
 
   return (
     <Layout head_title='Contacto' selected_tab='Contacto'>
@@ -24,6 +42,7 @@ export default function Contacto() {
           setSlideOpacity(0);
         setTimeout(() => {
           setSelectedPage('instalaciones')
+          setImageIndex(1);
         }, 300);
         setTimeout(() => {
           setSlideOpacity(1);
@@ -86,36 +105,17 @@ export default function Contacto() {
       <h1 className='sectionTitle'>NUESTRAS INSTALACIONES</h1>
         <div>
         <div className='row'>
-        <div className='column' style={{
-            alignItems: 'flex-end'
-          }}>
-          <div className='contacto'>
-          <img
-              src="/contacto/instalaciones_03.jpeg"
-              alt="Instalaciones 03"
-              className='imageCover'
-            />
-          </div>
-          </div>
           <div className='column' style={{
             alignItems: 'center',
           }}>
             <div className='contacto'>
             <img
-              src="/contacto/instalaciones_01.jpeg"
-              alt="Instalaciones 01"
-              className='imageCover'
-            />
-            </div>
-          </div>
-          <div className='column' style={{
-            alignItems: 'flex-start',
-          }}>
-            <div className='contacto'>
-          <img
-              src="/contacto/instalaciones_02.jpeg"
-              alt="Instalaciones 02"
-              className='imageCover'
+              src={`/contacto/instalaciones_0${imageIndex}.jpeg`}
+              alt={`Instalaciones 0${imageIndex}`}
+              className='imageCover imageAppear'
+              style={{
+                opacity: imageOpacity,
+              }}
             />
             </div>
           </div>
