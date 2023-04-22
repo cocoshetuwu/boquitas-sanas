@@ -72,6 +72,10 @@ export default function Contacto() {
           </div>
           </div>
           <div className='row' style={{
+            backgroundColor: 'white',
+            borderTop: '10px solid #bef0ff',
+            borderBottom: '10px solid #bef0ff',
+            marginTop: '2vh',
           }}>
           <div className='column' style={{
             alignItems: 'flex-end',

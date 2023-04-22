@@ -134,7 +134,7 @@ export default function QuienesSomos() {
             marginRight: '12.5vw',
           }}>
             Equipo humano especializado en atención bucal para
-bebés, niños y adolescentes con cualquier necesidad. Somos el lugar donde tú y tu familia se sentirán bien atendidos. Con nosotros encontrarás las herramientas para brindarles a sus hijos una vida bucal sana. Contamos con más de veinte años de experiencia en el ramo.
+bebés, niños y adolescentes con cualquier necesidad. Somos el lugar donde tú y tu familia se sentirán bien atendidos. Con nosotros encontrarás las herramientas para brindarles a tus hijos una vida bucal sana. Contamos con más de veinte años de experiencia en el ramo.
           </p>
           </div>
         </div>

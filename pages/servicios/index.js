@@ -70,7 +70,7 @@ export default function Servicios() {
             marginLeft: '16.67vw',
             marginRight: '12.5vw',
           }}>
-            Nosotros le brindaremos la atención necesaria a sus pequeños de modo de hacer de la salud bucal un proyecto de vida; Al proveerle a sus hijos las herramientas necesarias para que aprendan a cuidar de su boca de acuerdo a su edad.
+            Nosotros le brindaremos la atención necesaria a sus pequeños de modo de hacer de la salud bucal un proyecto de vida; al proveerle a sus hijos las herramientas necesarias para que aprendan a cuidar de su boca de acuerdo a su edad.
           </p>
           </div>
         </div>
